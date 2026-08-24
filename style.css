@@ -1698,6 +1698,69 @@ hr {
     color: red;
 }
 
+/* ---------- Yukarı Kayan Etiketler ---------- */
+/* Animasyon uygulanacak ögelerin başlangıç durumu */
+.revealKaydir {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform; /* Performans optimizasyonu */
+}
+
+/* Sayfa o hizaya geldiğinde JS tarafından eklenecek sınıf */
+.revealKaydir.revealKaydirActive {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ---------- Sayfa İlk Yüklendiğinde Kayan Etiketler ---------- */
+/* Yukardan/Aşağıdan Süzülme Animasyonu */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* 30px aşağıdan başlar */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Orijinal yerine oturur */
+    }
+}
+
+/* Sayfa Açılışında Çalışacak Sınıf */
+.fade-in-on-load {
+    /* Başlangıçta görünmesin */
+    opacity: 0;
+    /* Animasyonu bağlayalım */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Gecikme (Staggered) Sınıfları - Sırayla Gelmesi İçin */
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.3s;
+}
+
+.delay-3 {
+    animation-delay: 0.5s;
+}
+
+.delay-4 {
+    animation-delay: 0.7s;
+}
+
+
+
+
+
+
+
+
+
+
+
 .fa-square-phone-flip:hover {
     color: blue
 }
