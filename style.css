@@ -641,7 +641,7 @@ ul, li, a, i {
 }
 
 .achievementsTitle {
-    width: 100%;
+    width: 90%;
     height: 150px;
     font-size: 40px;
     text-align: center;
@@ -1280,6 +1280,10 @@ hr {
 /* Telefonlar için */
 @media (max-width: 767px) {
 
+    .Card2 {
+        width: auto;
+    }
+    
     .hamurgerIcon {
         display: flex !important;
         justify-content: center;
@@ -1293,7 +1297,7 @@ hr {
     /*diller*/
 
     .languageContainer {
-        right: 20px;
+        right: 40px;
     }
 
     .section4Title {
@@ -1394,7 +1398,7 @@ hr {
 #toTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 35px;
     z-index: 99;
     background-color: var(--green-accent);
     background-color: #000;
