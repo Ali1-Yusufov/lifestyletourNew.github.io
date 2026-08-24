@@ -1355,6 +1355,7 @@ hr {
 
     .CardSwiperContainer {
         width: 100%;
+        overflow: hidden;
     }
 
     /*footer*/
