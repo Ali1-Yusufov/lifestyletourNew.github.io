@@ -1404,7 +1404,7 @@ hr {
 #toTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 35px;
+    right: 20px;
     z-index: 99;
     background-color: var(--green-accent);
     background-color: #000;
