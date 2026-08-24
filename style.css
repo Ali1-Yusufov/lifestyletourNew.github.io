@@ -1299,6 +1299,11 @@ hr {
     .swiper.mySwiper {
             margin-top: -20px;
     }
+
+    .section1 {
+        margin-block: 0;
+        margin-top: 100px;
+    }
     /*diller*/
 
     .languageContainer {
@@ -1329,6 +1334,10 @@ hr {
         width: 250px;
         border-top: 1px solid #bebebe;
     }
+    /*hizmetlerimiz*/
+    .Card3 {
+        width: 320px;
+    }
 
     /*iletişim*/
 
@@ -1337,7 +1346,10 @@ hr {
     }
 
     /*kimlerle çalışıyoruz*/
-
+    .section5 {
+        min-height: 450px;
+    }
+    
     .section5Container {
         flex-direction: column;
     }
