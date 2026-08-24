@@ -328,7 +328,7 @@ ul, li, a, i {
 .hamurgerIcon {
     justify-content: center;
     align-items: center;
-    display: none;
+    display: none !important;
 }
 
 .mobileItemIcons {
