@@ -1279,7 +1279,12 @@ hr {
 
 /* Telefonlar için */
 @media (max-width: 767px) {
-
+    .swiperYazi {
+        width: 350px
+    }
+    .swiperYaziTitle {
+        font-size: 30px
+    }
     .Card2 {
         width: auto;
     }
