@@ -918,7 +918,7 @@ ul, li, a, i {
 }
 
 .paket2 {
-    background-image: url(/images/iletisimimage4.jpg);
+    background-image: url(./iletisimimage4.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
