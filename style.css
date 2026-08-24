@@ -757,27 +757,27 @@ ul, li, a, i {
 }
 
 .card3TopImg1 {
-    background-image: url(/images/slayt1.jpg);
+    background-image: url(./images/slayt1.jpg);
 }
 
 .card3TopImg2 {
-    background-image: url(/images/slayt2.jpg);
+    background-image: url(./images/slayt2.jpg);
 }
 
 .card3TopImg3 {
-    background-image: url(/images/slayt3.jpg);
+    background-image: url(./images/slayt3.jpg);
 }
 
 .card3TopImg4 {
-    background-image: url(/images/iletisimimage.jpg);
+    background-image: url(./images/iletisimimage.jpg);
 }
 
 .card3TopImg5 {
-    background-image: url(/images/iletisimimage4.jpg);
+    background-image: url(./images/iletisimimage4.jpg);
 }
 
 .card3TopImg6 {
-    background-image: url(/images/iletisimimage3.jpg);
+    background-image: url(./images/iletisimimage3.jpg);
 }
 
 .card3Bottom {
