@@ -326,7 +326,6 @@ ul, li, a, i {
 
 
 .hamurgerIcon {
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
