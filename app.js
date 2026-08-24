@@ -115,3 +115,31 @@ const showSocial = (toggleCard, socialCard) => {
 }
 showSocial('card3-toggle', 'card3__social')
 // ----------
+
+// ----------
+// Yukarı kayan etiketler
+document.addEventListener("DOMContentLoaded", () => {
+    // .reveal sınıfına sahip tüm elemanları seçiyoruz
+    const reveals = document.querySelectorAll(".revealKaydir");
+
+    const observerOptions = {
+        root: null, // Ana ekranı baz alır
+        rootMargin: "0px",
+        threshold: 0.15 // Elemanın en az %15'i ekrana girince çalışır
+    };
+
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Eleman ekrana girince 'active' sınıfını ekle
+                entry.target.classList.add("revealKaydirActive");
+                // Animasyon bir kere çalıştıktan sonra takibi bırak (İsteğe bağlı)
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Her bir elemanı gözlemciye ekliyoruz
+    reveals.forEach(reveal => revealOnScroll.observe(reveal));
+});
+// ----------
