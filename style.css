@@ -1344,6 +1344,9 @@ hr {
     .section4 {
         height: auto;
     }
+    .card2Smedia i {
+    font-size: 30px;
+}
 
     /*kimlerle çalışıyoruz*/
     .section5 {
