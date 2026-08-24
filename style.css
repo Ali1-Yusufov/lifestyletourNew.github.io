@@ -329,6 +329,7 @@ ul, li, a, i {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .mobileItemIcons {
@@ -1280,6 +1281,12 @@ hr {
 /* Telefonlar için */
 @media (max-width: 767px) {
 
+    .hamurgerIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     /*swiper*/
     .swiper.mySwiper {
             margin-top: -20px;
@@ -1676,4 +1683,12 @@ hr {
 .randevuicon {
     color: #fff;
     font-size: 12px;
+}
+
+.fa-location-dot:hover {
+    color: red;
+}
+
+.fa-square-phone-flip:hover {
+    color: blue
 }
