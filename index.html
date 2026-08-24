@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiperJs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header" id="header">
+            <div class="headerContainer">
+                <div class="headerLeft">
+                    <ul class="headerLeftUl">
+                        <li><a href="/"><img src="/images/LogoBR.png" alt="logo"></a></li>
+                        <li class="headerLeftLi filling"><a href="#container">Ana Sayfa</a></li>
+                        <!-- <li class="headerLeftLi filling"><a href="/">Hakkımızda</a></li> -->
+                        <li class="headerLeftLi filling"><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+                        <li class="headerLeftLi filling"><a href="#iletisim">İletişim</a></li>
+                        <li class="headerLeftLi filling"><a href="#kimler">Bizi Kimler Tercih ediyor ?</a></li>
+                    </ul>
+                </div>
+                <div class="headerRight">
+                    <!-- <div class="headerRightItem"><a href="/"><i class="fa-solid fa-language"></i></a></div> -->
+                    <div class="headerRightItem"><a href="https://www.google.com/maps?q=Ankara+Kızılay+Meydanı"><i class="fa-solid fa-location-dot"></i></a></div>
+                    <!-- <div class="headerRightItem"><a href="/"><i class="fa-regular fa-circle-user"></i></a></div> -->
+                    <div class="headerRightItem"><a href="https://wa.me/905350701202?text=Merhaba,%20Online%20Randevu%20Almak%20istiyorum" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></div>
+                    <div class="headerRightItem"><a href="tel:+905350701202"><i class="fa-solid fa-square-phone-flip"></i></a></div>
+                    <div class="headerRightItem"><span class="line"></span></div>
+                    <!-- <div class="headerRightItem">
+                        <a href="/" class="headerRightItemRandevu">
+                            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div><span>Ara</span></div> 
+                        </a>
+                    </div> -->
+                    <div class="menuRight">
+                        <div class="search"><input id="searchInput" class="searchInput" type="text" placeholder="Sitede Ara">
+                            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hamurgerIcon">
+                    <button class="headerMMenu" id="headerMMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobileMenu">
+            <ul class="mobileMenuUl">
+                <li class="mobileItem"><a href="#container">Ana Sayfa</a></li>
+                <li class="mobileItem"><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+                <li class="mobileItem"><a href="#iletisim">İletişim</a></li>
+                <li class="mobileItem"><a href="#kimler">Bizi Kimler Tercih ediyor ?</a></li>
+                <li class="mobileItem">
+                    <div class="search"><input id="searchInput" class="searchInput" type="text" placeholder="Sitede Ara">
+                        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                    </div>
+                </li>
+                <li class="mobileItem mobileItemIcons">
+                    <div class="headerRightItem"><a href="https://www.google.com/maps?q=Ankara+Kızılay+Meydanı"><i class="fa-solid fa-location-dot"></i></a></div>
+                    <div class="headerRightItem"><a href="tel:+905350701202"><i class="fa-solid fa-square-phone-flip"></i></a></div>
+                    <div class="headerRightItem"><a href="https://wa.me/905350701202?text=Merhaba,%20Online%20Randevu%20Almak%20istiyorum" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <section class="section1" id="swiper">
+
+                <div class="helpContainer" style="display: none;">
+                    <div class="help">
+                        <div class="helpTitle">Nasıl yardımcı olabiliriz ?</div>
+                        <div class="helpTitles">
+                            <a href="#iletisim"><div class="helpItem">Online Araç Kirala</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="languageContainer">
+                    <div class="languageTop">
+                        <div class="languageTopInner">
+                            <img class="languageTopImg" src="/images/Screenshot_1.png" alt="">
+                            <span>Tr</span>
+                        </div>
+                        <div class="languageTopInner">
+                            <img class="languageTopImg" src="/images/Screenshot_2.png" alt="">
+                            <span>Uk</span>
+                        </div>
+                        <div class="languageTopInner">
+                            <img class="languageTopImg" src="/images/Screenshot_3.png" alt="">
+                            <span>Ru</span>
+                        </div>
+                        <div class="languageTopInner">
+                            <img class="languageTopImg" src="/images/Screenshot_4.png" alt="">
+                            <span>Es</span>
+                        </div>
+                    </div>
+                    <div class="languageBottom"><i class="fa-solid fa-language"></i><span>Diğer Diller</span></div>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="/"><img src="/images/slayt1.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="/"><img src="/images/slayt2.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="/"><img src="/images/slayt3.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-button-next sliderbutton"><i class="fa-solid fa-angle-right sliderbuttonI"></i></div>
+                    <div class="swiper-button-prev sliderbutton"><i class="fa-solid fa-angle-left sliderbuttonI"></i></div>
+
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiperYazi">
+                        <div class="swiperYaziTitle">Size Nasıl Yardımcı Olabiliriz ?</div>
+                        <a href="#iletisim"><div class="swiperYaziButton">Online Randevu Al</div></a>
+                    </div>
+                </div>   
+
+            </section>
+
+            <section class="section2" id="hizmetlerimiz">
+                <div class="section4Title">Hizmetleriz</div>
+                <div class="paket3 hizmetler-kapsayici">
+                    <div class="Card3 hizmet-item">
+                        <div class="card3TopImg1"></div>
+                        <div class="card3Bottom">
+                            <div class="card3Bottom1">
+                                <h3>ŞOFÖRLÜ ARAÇ KİRALAMA</h3>
+                                <a href="/">İncele</a>
+                            </div>
+                            <div class="card3Bottom2">
+                                <!-- <p><span class="card3BottomThin">By</span>Lorem, ipsum.</p>
+                                <div class="card3Bottom2price">
+                                    <div class="card3Bottom2price1">88% off<br><span class="line-through">/&100</span></div>
+                                    <div class="card3Bottom2price2"><span>12</span></div>
+                                    <div class="card3Bottom2price3"><span class="card3BottomThin">USD</span></div>
+                                </div> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, numquam...</p>
+                            </div>
+                            <div class="card3Bottom3">
+                                <div class="card3Bottom3Left">Score<span class="card3BottomThin">4.9/5</span></div>
+                                <div class="card3Bottom3Right"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Card3 hizmet-item">
+                        <div class="card3TopImg2"></div>
+                        <div class="card3Bottom">
+                            <div class="card3Bottom1">
+                                <h3>Havaalanı VİP Transfer</h3>
+                                <a href="/">İncele</a>
+                            </div>
+                            <div class="card3Bottom2">
+                                <!-- <p><span class="card3BottomThin">By</span>Lorem, ipsum.</p>
+                                <div class="card3Bottom2price">
+                                    <div class="card3Bottom2price1">88% off<br><span class="line-through">/&100</span></div>
+                                    <div class="card3Bottom2price2"><span>12</span></div>
+                                    <div class="card3Bottom2price3"><span class="card3BottomThin">USD</span></div>
+                                </div> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eius...</p>
+                            </div>
+                            <div class="card3Bottom3">
+                                <div class="card3Bottom3Left">Score<span class="card3BottomThin">4.9/5</span></div>
+                                <div class="card3Bottom3Right"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Card3 hizmet-item">
+                        <div class="card3TopImg3"></div>
+                        <div class="card3Bottom">
+                            <div class="card3Bottom1">
+                                <h3>Şoförlü Kiralık Vito</h3>
+                                <a href="/">İncele</a>
+                            </div>
+                            <div class="card3Bottom2">
+                                <!-- <p><span class="card3BottomThin">By</span>Lorem, ipsum.</p>
+                                <div class="card3Bottom2price">
+                                    <div class="card3Bottom2price1">88% off<br><span class="line-through">/&100</span></div>
+                                    <div class="card3Bottom2price2"><span>12</span></div>
+                                    <div class="card3Bottom2price3"><span class="card3BottomThin">USD</span></div>
+                                </div> -->
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quas...</p>
+                            </div>
+                            <div class="card3Bottom3">
+                                <div class="card3Bottom3Left">Score<span class="card3BottomThin">4.9/5</span></div>
+                                <div class="card3Bottom3Right"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Card3 hizmet-item">
+                        <div class="card3TopImg4"></div>
+                        <div class="card3Bottom">
+                            <div class="card3Bottom1">
+                                <h3>Şoförlü Kiralık Vito</h3>
+                                <a href="/">İncele</a>
+                            </div>
+                            <div class="card3Bottom2">
+                                <!-- <p><span class="card3BottomThin">By</span>Lorem, ipsum.</p>
+                                <div class="card3Bottom2price">
+                                    <div class="card3Bottom2price1">88% off<br><span class="line-through">/&100</span></div>
+                                    <div class="card3Bottom2price2"><span>12</span></div>
+                                    <div class="card3Bottom2price3"><span class="card3BottomThin">USD</span></div>
+                                </div> -->
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quas...</p>
+                            </div>
+                            <div class="card3Bottom3">
+                                <div class="card3Bottom3Left">Score<span class="card3BottomThin">4.9/5</span></div>
+                                <div class="card3Bottom3Right"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Card3 hizmet-item">
+                        <div class="card3TopImg5"></div>
+                        <div class="card3Bottom">
+                            <div class="card3Bottom1">
+                                <h3>Şoförlü Kiralık Vito</h3>
+                                <a href="/">İncele</a>
+                            </div>
+                            <div class="card3Bottom2">
+                                <!-- <p><span class="card3BottomThin">By</span>Lorem, ipsum.</p>
+                                <div class="card3Bottom2price">
+                                    <div class="card3Bottom2price1">88% off<br><span class="line-through">/&100</span></div>
+                                    <div class="card3Bottom2price2"><span>12</span></div>
+                                    <div class="card3Bottom2price3"><span class="card3BottomThin">USD</span></div>
+                                </div> -->
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quas...</p>
+                            </div>
+                            <div class="card3Bottom3">
+                                <div class="card3Bottom3Left">Score<span class="card3BottomThin">4.9/5</span></div>
+                                <div class="card3Bottom3Right"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Card3 hizmet-item">
+                        <div class="card3TopImg6"></div>
+                        <div class="card3Bottom">
+                            <div class="card3Bottom1">
+                                <h3>Şoförlü Kiralık Vito</h3>
+                                <a href="/">İncele</a>
+                            </div>
+                            <div class="card3Bottom2">
+                                <!-- <p><span class="card3BottomThin">By</span>Lorem, ipsum.</p>
+                                <div class="card3Bottom2price">
+                                    <div class="card3Bottom2price1">88% off<br><span class="line-through">/&100</span></div>
+                                    <div class="card3Bottom2price2"><span>12</span></div>
+                                    <div class="card3Bottom2price3"><span class="card3BottomThin">USD</span></div>
+                                </div> -->
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quas...</p>
+                            </div>
+                            <div class="card3Bottom3">
+                                <div class="card3Bottom3Left">Score<span class="card3BottomThin">4.9/5</span></div>
+                                <div class="card3Bottom3Right"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="digerHizmetlerBtn" class="diger-hizmetler-btn">
+                        Diğer Hizmetler <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="achievementsContainer">
+                    <div class="achievementsTitle">Başarımlarınız ve Sizi en İyi Tanımlayan Cümleler</div>
+                    <div class="achievementsInner">
+                        <div class="achievementsItem">
+                            <div><img src="https://media.blacktomato.com/cdn-cgi/image/quality=82,format=auto/https://media.blacktomato.com/2025/06/0aIFRleC-guides.svg" alt=""></div>
+                            <span>Y Alnında Üstün Ödüller</span>
+                        </div>
+                        <span class="lineLonger"></span>
+                        <div class="achievementsItem">
+                            <div><img src="https://media.blacktomato.com/cdn-cgi/image/quality=82,format=auto/https://media.blacktomato.com/2025/06/UHVNpPRV-award-icon.svg" alt=""></div>
+                            <span>X Alan Üstün Başarısı</span>
+                        </div>
+                        <span class="lineLonger"></span>
+                        <div class="achievementsItem">
+                            <div><img src="https://media.blacktomato.com/cdn-cgi/image/quality=82,format=auto/https://media.blacktomato.com/2025/06/MSa4gZI8-support.svg" alt=""></div>
+                            <span>Z Kalitesinde En Başarılı Hizmet</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section4" id="iletisim">
+                <div class="paket2">
+                    <div class="Card2">
+                        <div class="card2Top">İletişim bilgilerimiz</div>
+                        <div class="card2Number"><i class="fa-solid fa-phone pam"></i><a href="tel:+905551112233">+90 555 555 55
+                                55</a></div>
+                        <div class="card2Adress"><i class="fa-solid fa-location-dot pam"></i>
+                            <a href="https://www.google.com/maps?q=Ankara+Kızılay+Meydanı" target="_blank">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam cum minus. Repellat, dicta earum!
+                            <span class="tiklayin">
+                                Google haritalar için tıklayın
+                            </span>
+                            </a>
+                        </div>
+                        <div class="card2Email"><i class="fa-solid fa-envelope pam"></i><a
+                                href="mailto:google@gmail.com">google@gmail.com</a></div>
+                        <div class="card2Smedia">
+                            <!-- <i class="fa-brands fa-github"></i> -->
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section5" id="kimler">
+                <div class="section5Container">
+                    <div class="section5Title">
+                        <div class="section5Title1">Kimlerle Çalışıyoruz ?</div>
+                    </div>
+                    <div class="CardSwiperContainer">
+                        <div class="swiper CardSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt1.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">Mehmet Yılmaz</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt2.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">Ahmet Doğan</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt3.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">İbrahim Koç</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt1.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">Mehmet Yılmaz</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt2.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">Ahmet Doğan</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt3.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">İbrahim Koç</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt1.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">Mehmet Yılmaz</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt2.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">Ahmet Doğan</div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-Card">
+                                    <img src="/images/slayt3.jpg" alt="">
+                                    <div class="swiper-slide-Card-title">İbrahim Koç</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hareketContainer">
+                            <div class="hareket">
+                                <!-- <i class="fa-regular fa-hand harekei-icon"></i> -->
+                                <i class="fa-solid fa-arrow-pointer harekei-icon"></i>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <div class="footerOne">
+                <div class="footerLogo">
+                    <img src="/images/LogoBR.png" alt="">
+                </div>
+                <div class="footerM">
+                    <div class="footerMenuItem"><a href="/">Ana Sayfa</a></div>
+                    <div class="footerMenuItem"><a href="/">Hizmetlerimiz</a></div>
+                    <div class="footerMenuItem"><a href="/">İletişim</a></div>
+                    <div class="footerMenuItem"><a href="/">Bizi Kimler Tercih ediyor ?</a></div>
+                </div>
+            </div>
+            <div class="footerTwo">
+                <span>©2026</span>
+                <span>Life Style Tour</span>
+            </div>
+
+            <button id="toTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+            <div class="randevuOlusturButton">
+                <div class="card3__social" id="card3__social">
+                    <div class="card3__social-control">
+                        <!-- Toggle button -->
+                        <div class="card3__social-toggle" id="card3-toggle">
+                            <!-- <i class="ri-add-line"></i> -->
+                             <i class="fa-solid fa-plus randevuicon"></i>
+                        </div>
+
+                        <span class="card3__social-text">
+                            Randevu oluştur
+                            <!--Seni Seviyorum Cevizli Kurabiyemmm-->
+                        </span>
+
+                        <!-- Card social -->
+                        <ul class="card3__social-list">
+                            <a href="https://wa.me/905350701202?text=Merhaba,%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="card3__social-link">
+                                 <!-- <i class="ri-facebook-line"></i>  -->
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                             <!-- <a href="mailto:ornek@domain.com?subject=Bilgi%20Talebi&body=Merhaba,%20sitenizden%20ulasıyorum." target="_blank" class="card3__social-link">
+                                <i class="ri-youtube-fill"></i>
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>  -->
+                            <a href="tel:+905350701202" class="card3__social-link">
+                                <i class="fa-solid fa-phone-flip"></i>
+                            </a>
+                            <a href="sms:+905350701202" class="card3__social-link">
+                                <i class="fa-solid fa-comment-sms"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- card swiper için -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
